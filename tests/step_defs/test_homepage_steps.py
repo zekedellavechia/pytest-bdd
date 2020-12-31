@@ -1,4 +1,8 @@
 from pytest_bdd import scenario, given, when, then
+from conftest import *
+
+
+# SCENARIOS
 
 
 @scenario('../features/homepage.feature', 'Navigate to home page')
@@ -11,9 +15,12 @@ def test_navigate_to_results_page():
     pass
 
 
+# STEPS
+
+
 @given('homepage is displayed')
 def home_page():
-    pass
+    driver.get(base_url)
 
 
 @when('the user clicks homepage')
