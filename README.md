@@ -29,14 +29,11 @@ pipenv install pytest-bdd
 
 ## References
 ### [Python Download](https://www.python.org/downloads/)
-### [Behave docs](https://behave.readthedocs.io/en/latest/index.html)
-### [Selenium Documentation](https://www.selenium.dev/documentation/en/)
+### [Pytest docs](https://docs.pytest.org/en/stable/)
+### [Pytest-bdd project](https://pypi.org/project/pytest-bdd/)
 ### [Gherkin Reference](https://cucumber.io/docs/gherkin/reference/)
-### [Allure Installation](https://pypi.org/project/allure-behave/)
 ### [Netlify](https://www.netlify.com/)
 ### [Pipenv](https://pypi.org/project/pipenv/)
-### [Behave Webdriver](https://pypi.org/project/behave-webdriver/)
-### [Behavior driven python - OpenSource](https://opensource.com/article/18/5/behavior-driven-python)
 
 ## Cool videos
 ### [Behavior-Driven Python - PyCon 2018](https://www.youtube.com/watch?v=EtIAbfCrsFI&t=344s&ab_channel=PyCon2018)
