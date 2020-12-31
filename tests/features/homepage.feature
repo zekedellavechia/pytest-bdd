@@ -7,3 +7,9 @@ Feature: Homepage related cases
     Given homepage is displayed
     When the user clicks homepage
     Then homepage page opens
+
+
+  Scenario: Navigate to results page
+    Given homepage is displayed
+    When the user clicks results
+    Then results page opens
