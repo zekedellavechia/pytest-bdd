@@ -1,18 +1,8 @@
-from pytest_bdd import scenario, given, when, then
+from pytest_bdd import scenarios, given, when, then, parsers
 from conftest import *
 
-
 # SCENARIOS
-
-
-@scenario('../features/homepage.feature', 'Navigate to home page')
-def test_navigate_to_home_page():
-    pass
-
-
-@scenario('../features/homepage.feature', 'Navigate to results page')
-def test_navigate_to_results_page():
-    pass
+scenarios('../features/homepage.feature')
 
 
 # STEPS
@@ -23,21 +13,26 @@ def home_page():
     driver.get(base_url)
 
 
-@when('the user clicks homepage')
-def click_homepage():
-    pass
+@when('the user clicks home')
+def click_button():
+    driver.find_element_by_css_selector('a[href="https://registry.qa.covid.gcp.rexdb.us"]').click()
 
 
 @when('the user clicks results')
 def click_homepage():
-    pass
+    driver.find_element_by_css_selector('a[href="https://registry.qa.covid.gcp.rexdb.us/results"]').click()
 
 
 @then('homepage page opens')
 def home_page_opens():
-    pass
+    driver.find_element_by_css_selector('h1[class="hero-title xl"]').is_displayed()
 
 
 @then('results page opens')
 def home_page_opens():
-    pass
+    driver.find_element_by_css_selector('h2[class="page-title"]').is_displayed()
+
+
+@then('close browser')
+def close_browser():
+    driver.close()

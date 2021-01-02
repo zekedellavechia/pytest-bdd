@@ -5,11 +5,13 @@ Feature: Homepage related cases
 
   Scenario: Navigate to home page
     Given homepage is displayed
-    When the user clicks homepage
+    When the user clicks home
     Then homepage page opens
+
 
 
   Scenario: Navigate to results page
     Given homepage is displayed
     When the user clicks results
     Then results page opens
+    And close browser
