@@ -37,3 +37,5 @@ Feature: Homepage related cases
     Given homepage is displayed
     When the user clicks contact us
     Then contact us page opens
+    # todo maybe i should add close browser for all cases (?
+    Then close browser

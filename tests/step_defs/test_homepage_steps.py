@@ -44,3 +44,43 @@ def user_clicks_about():
 @then('about page opens')
 def about_page_opens():
     pass
+
+
+@when('the user clicks FAQ')
+def user_clicks_faq():
+    s('a[href="https://registry.qa.covid.gcp.rexdb.us/faq"]').click()
+
+
+@then('FAQ page opens')
+def faq_page_opens():
+    pass
+
+
+@when('the user clicks resources')
+def user_clicks_resources():
+    s('a[href="https://registry.qa.covid.gcp.rexdb.us/resources"]').click()
+
+
+@then('resources page opens')
+def resources_page_opens():
+    pass
+
+
+@when('the user clicks our partners')
+def user_clicks_our_partners():
+    s('a[href="https://registry.qa.covid.gcp.rexdb.us/partners"]').click()
+
+
+@then('our partners page opens')
+def our_partners_page_opens():
+    pass
+
+
+@when('the user clicks contact us')
+def user_clicks_contact_us():
+    s('a[href="https://registry.qa.covid.gcp.rexdb.us/contacts"]').click()
+
+
+@then('contact us page opens')
+def contact_us_page_opens():
+    pass
