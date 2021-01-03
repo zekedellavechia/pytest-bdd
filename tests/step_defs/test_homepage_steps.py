@@ -7,6 +7,7 @@ from selene.api import have
 scenarios('../features/homepage.feature')
 
 
+# Steps
 @given('homepage is displayed')
 def home_page():
     browser.open_url(base_url)
@@ -85,6 +86,3 @@ def user_clicks_contact_us():
 @then('contact us page opens')
 def contact_us_page_opens():
     pass
-
-
-# add login vef
