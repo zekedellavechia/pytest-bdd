@@ -26,6 +26,11 @@ In command promt type:
 pipenv install pytest-bdd
 ```
 
+### Installing Selene wrapper
+```bash
+pipenv install selene
+```
+
 
 ## References
 ### [Python Download](https://www.python.org/downloads/)
