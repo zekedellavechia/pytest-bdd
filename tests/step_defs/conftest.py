@@ -1,8 +1,9 @@
-from selene import browser
+from selene import config, browser
 
-# browser.driver()
-# driver.implicitly_wait(10)
+config.browser_name = 'chrome'
 base_url = 'https://registry.qa.covid.gcp.rexdb.us/'
+config.timeout = 2
+# base_url = 'https://registry.qa.covid.gcp.rexdb.us/'
 
 
 # Ezequiel Dellavechia 2020

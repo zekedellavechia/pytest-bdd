@@ -1,5 +1,5 @@
 from pytest_bdd import scenarios, given, when, then
-from selene.api import by, be, s, ss
+from selene.api import s
 from tests.step_defs.conftest import *
 
 # Path for Scenarios
