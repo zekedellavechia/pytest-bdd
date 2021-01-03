@@ -17,4 +17,23 @@ Feature: Homepage related cases
     Given homepage is displayed
     When the user clicks results
     Then results page opens
-    And close browser
+
+  Scenario: Navigate to FAQ page
+    Given homepage is displayed
+    When the user clicks FAQ
+    Then FAQ page opens
+
+  Scenario: Navigate to resources page
+    Given homepage is displayed
+    When the user clicks resources
+    Then resources page opens
+
+  Scenario: Navigate to our partners page
+    Given homepage is displayed
+    When the user clicks our partners
+    Then our partners page opens
+
+  Scenario: Navigate to Contact us page
+    Given homepage is displayed
+    When the user clicks contact us
+    Then contact us page opens
