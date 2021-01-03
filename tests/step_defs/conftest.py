@@ -1,7 +1,7 @@
-from selenium import webdriver
+from selene import browser
 
-driver = webdriver.Chrome()
-driver.implicitly_wait(10)
+# browser.driver()
+# driver.implicitly_wait(10)
 base_url = 'https://registry.qa.covid.gcp.rexdb.us/'
 
 
