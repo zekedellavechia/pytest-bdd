@@ -14,22 +14,22 @@ def home_page():
 
 @when('the user clicks home')
 def click_button():
-    s(home_button).click()
+    home_button.click()
 
 
 @when('the user clicks results')
 def click_results():
-    s(results_button).click()
+    results_button.click()
 
 
 @then('homepage page opens')
 def home_page_opens():
-    s('h1[class="hero-title xl"]').is_displayed()
+    home_page_title.is_displayed()
 
 
 @then('results page opens')
 def home_page_opens():
-    s('h2[class="page-title"]').is_displayed()
+    results_page_title.is_displayed()
 
 
 @then('close browser')
@@ -39,7 +39,7 @@ def close_browser():
 
 @when('the user clicks about')
 def user_clicks_about():
-    s('a[href="https://registry.qa.covid.gcp.rexdb.us/about"]').click()
+    about_button.click()
 
 
 @then('about page opens')
@@ -49,7 +49,7 @@ def about_page_opens():
 
 @when('the user clicks FAQ')
 def user_clicks_faq():
-    s('a[href="https://registry.qa.covid.gcp.rexdb.us/faq"]').click()
+    faq_button.click()
 
 
 @then('FAQ page opens')
@@ -59,7 +59,7 @@ def faq_page_opens():
 
 @when('the user clicks resources')
 def user_clicks_resources():
-    s('a[href="https://registry.qa.covid.gcp.rexdb.us/resources"]').click()
+    resources_button.click()
 
 
 @then('resources page opens')
@@ -69,7 +69,7 @@ def resources_page_opens():
 
 @when('the user clicks our partners')
 def user_clicks_our_partners():
-    s('a[href="https://registry.qa.covid.gcp.rexdb.us/partners"]').click()
+    our_partners_button.click()
 
 
 @then('our partners page opens')
@@ -79,7 +79,7 @@ def our_partners_page_opens():
 
 @when('the user clicks contact us')
 def user_clicks_contact_us():
-    s('a[href="https://registry.qa.covid.gcp.rexdb.us/contacts"]').click()
+    contact_us_button.click()
 
 
 @then('contact us page opens')
