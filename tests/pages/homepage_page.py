@@ -1,5 +1,6 @@
-from selene.api import s
+from selene.api import s, ss, have, by
 
+# Home Page
 home_button = s('a[href="https://registry.qa.covid.gcp.rexdb.us"]')
 results_button = s('a[href="https://registry.qa.covid.gcp.rexdb.us/results"]')
 home_page_title = s('h1[class="hero-title xl"]')

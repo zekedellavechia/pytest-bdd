@@ -1,7 +1,7 @@
 from pytest_bdd import scenarios, given, when, then
-from selene.api import s
-from tests.step_defs.conftest import *
-from tests.locators import *
+from conftest import *
+from tests.pages.homepage_page import *
+from selene.api import have
 
 # Path for Scenarios
 scenarios('../features/homepage.feature')

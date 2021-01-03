@@ -1,8 +1,11 @@
+from selenium import webdriver
 from selene import config, browser
 
-config.browser_name = 'chrome'
+
+driver = webdriver.Chrome()
+config.timeout = 3
+browser.set_driver(driver)
 base_url = 'https://registry.qa.covid.gcp.rexdb.us/'
-config.timeout = 2
-config.start_maximized
+
 
 # Ezequiel Dellavechia 2020
