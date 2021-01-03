@@ -39,6 +39,8 @@ pipenv install selene
 ### [Gherkin Reference](https://cucumber.io/docs/gherkin/reference/)
 ### [Netlify](https://www.netlify.com/)
 ### [Pipenv](https://pypi.org/project/pipenv/)
+### [Selene docs](https://selene-docs-test.readthedocs.io/en/latest/selene.html)
+
 
 ## Cool videos
 ### [Behavior-Driven Python - PyCon 2018](https://www.youtube.com/watch?v=EtIAbfCrsFI&t=344s&ab_channel=PyCon2018)
