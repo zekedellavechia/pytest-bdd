@@ -1,13 +1,20 @@
 from pytest_bdd import scenarios, given, when, then
-from conftest import *
 from tests.pages.homepage_page import *
-from selene.api import have
+from conftest import *
+from selene import browser
+
 
 # Path for Scenarios
+
 scenarios('../features/homepage.feature')
 
 
+# Fixtures
+
+
 # Steps
+
+
 @given('homepage is displayed')
 def home_page():
     browser.open_url(base_url)
