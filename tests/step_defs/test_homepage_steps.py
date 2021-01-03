@@ -1,6 +1,7 @@
 from pytest_bdd import scenarios, given, when, then
 from selene.api import s
 from tests.step_defs.conftest import *
+from tests.locators import *
 
 # Path for Scenarios
 scenarios('../features/homepage.feature')
@@ -13,12 +14,12 @@ def home_page():
 
 @when('the user clicks home')
 def click_button():
-    s('a[href="https://registry.qa.covid.gcp.rexdb.us"]').click()
+    s(home_button).click()
 
 
 @when('the user clicks results')
-def click_homepage():
-    s('a[href="https://registry.qa.covid.gcp.rexdb.us/results"]').click()
+def click_results():
+    s(results_button).click()
 
 
 @then('homepage page opens')
