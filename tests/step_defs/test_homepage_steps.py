@@ -1,5 +1,5 @@
-from pytest_bdd import scenarios, given, when, then, parsers
-from conftest import *
+from pytest_bdd import scenarios, given, when, then
+from tests.step_defs.conftest import *
 
 # SCENARIOS
 scenarios('../features/homepage.feature')
@@ -36,3 +36,13 @@ def home_page_opens():
 @then('close browser')
 def close_browser():
     driver.close()
+
+
+@when('the user clicks about')
+def user_clicks_about():
+    driver.find_element_by_css_selector('a[href="https://registry.qa.covid.gcp.rexdb.us/about"]').click()
+
+
+@then('about page opens')
+def about_page_opens():
+    pass

@@ -8,7 +8,10 @@ Feature: Homepage related cases
     When the user clicks home
     Then homepage page opens
 
-
+  Scenario: Navigate to about page
+    Given homepage is displayed
+    When the user clicks about
+    Then about page opens
 
   Scenario: Navigate to results page
     Given homepage is displayed
