@@ -1,11 +1,8 @@
 from pytest_bdd import scenarios, given, when, then
 from tests.step_defs.conftest import *
 
-# SCENARIOS
+# Path for Scenarios
 scenarios('../features/homepage.feature')
-
-
-# STEPS
 
 
 @given('homepage is displayed')
