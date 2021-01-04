@@ -1,12 +1,15 @@
 import pytest
 from pytest_bdd import given
 from selenium import webdriver
+from selene import browser
+
 
 base_url = 'https://registry.qa.covid.gcp.rexdb.us/'
 
 
-
-
+def pytest_bdd_after_scenario():
+    print('Closing Browser')
+    browser.close()
 
 
 
