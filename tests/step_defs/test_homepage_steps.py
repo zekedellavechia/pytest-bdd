@@ -1,6 +1,6 @@
 from pytest_bdd import scenarios, when, then
 from tests.pages.homepage_page import *
-from tests.step_defs.conftest import *
+from tests.conftest import *
 from selene import browser
 
 

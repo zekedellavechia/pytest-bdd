@@ -1,4 +1,7 @@
 from selene.api import s
+from selenium import webdriver
+from tests.conftest import *
+
 
 # Home Page
 home_button = s('a[href="https://registry.qa.covid.gcp.rexdb.us"]')
