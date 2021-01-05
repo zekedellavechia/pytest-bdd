@@ -32,7 +32,16 @@ pipenv install pytest-bdd
 pipenv install selene
 ```
 ## Running cases:
-By tag just put the marker, for example to run cases marked as smoke: pytest -m smoke
+To run all the features: 
+```bash
+pipenv run pytest
+```
+
+By tag just put the marker, for example to run cases marked as smoke: 
+```bash
+pipenv run pytest -m smoke
+```
+
 
 
 ## References
