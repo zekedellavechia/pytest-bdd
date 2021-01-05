@@ -1,7 +1,8 @@
 from pytest_bdd import scenarios, when, then
 from tests.pages.homepage_page import *
 from tests.conftest import *
-from selene import browser
+from selenium import webdriver
+from time import sleep
 
 
 # Path for Scenarios
@@ -18,13 +19,14 @@ scenarios('../features/homepage.feature')
 # Given
 @given('homepage is displayed')
 def home_page():
-    browser.open_url(base_url)
+    driver.maximize_window()
+    driver.get(base_url)
 
 
 # When
 @when('the user clicks home')
 def click_button():
-    home_button.click()
+    driver.find_element_by_css_selector(home_button).click()
 
 
 @when('the user clicks results')
@@ -75,7 +77,9 @@ def contact_us_page_opens():
 
 @then('homepage page opens')
 def home_page_opens():
-    home_page_title.is_displayed()
+    driver.find_element_by_css_selector(home_page_title).is_displayed()
+
+
 
 
 @then('results page opens')

@@ -8,6 +8,7 @@ Feature: Homepage related cases
   Background:
     Given homepage is displayed
 
+    @test
   Scenario: Navigate to home page
     When the user clicks home
     Then homepage page opens
