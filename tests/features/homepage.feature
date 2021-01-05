@@ -8,11 +8,12 @@ Feature: Homepage related cases
   Background:
     Given homepage is displayed
 
-    @test
+  @test
   Scenario: Navigate to home page
     When the user clicks home
     Then homepage page opens
 
+  @test
   Scenario: Navigate to about page
     When the user clicks about
     Then about page opens
@@ -39,3 +40,8 @@ Feature: Homepage related cases
     Then contact us page opens
     # todo maybe i should add close browser for all cases (?
     Then close browser
+
+    Scenario: Hola soy uin test
+
+      When nada
+      Then algo

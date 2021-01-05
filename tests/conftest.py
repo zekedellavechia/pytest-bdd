@@ -1,15 +1,20 @@
 import pytest
-from pytest_bdd import given
 from selenium import webdriver
 
-driver = webdriver.Chrome()
+
 
 
 base_url = 'https://registry.qa.covid.gcp.rexdb.us/'
 
+driver = webdriver.Chrome()
 
-def pytest_bdd_after_scenario():
-    driver.close()
+
+def pytest_bdd_before_scenario():
+    driver.maximize_window()
+
+
+#def pytest_bdd_after_scenario():
+#    driver.close()
 
 
 # Ezequiel Dellavechia 2020

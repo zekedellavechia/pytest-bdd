@@ -1,4 +1,4 @@
-from pytest_bdd import scenarios, when, then
+from pytest_bdd import scenarios, when, then, given
 from tests.pages.homepage_page import *
 from tests.conftest import *
 from selenium import webdriver
@@ -19,7 +19,6 @@ scenarios('../features/homepage.feature')
 # Given
 @given('homepage is displayed')
 def home_page():
-    driver.maximize_window()
     driver.get(base_url)
 
 
@@ -36,8 +35,7 @@ def click_results():
 
 @when('the user clicks about')
 def user_clicks_about():
-    about_button.click()
-
+    driver.find_element_by_css_selector(about_button).click()
 
 @when('the user clicks contact us')
 def user_clicks_contact_us():
@@ -99,4 +97,5 @@ def faq_page_opens():
 
 @then('about page opens')
 def about_page_opens():
-    pass
+    driver.find_element_by_css_selector(about_page_title).is_displayed()
+
