@@ -26,10 +26,13 @@ In command promt type:
 pipenv install pytest-bdd
 ```
 
+## Optional:
 ### Installing Selene wrapper
 ```bash
 pipenv install selene
 ```
+## Running cases:
+By tag just put the marker, for example to run cases marked as smoke: pytest -m smoke
 
 
 ## References
