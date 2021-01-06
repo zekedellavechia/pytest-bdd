@@ -40,3 +40,4 @@ Feature: Homepage related cases
     Then contact us page opens
     # todo maybe i should add close browser for all cases (?
     Then close browser
+
