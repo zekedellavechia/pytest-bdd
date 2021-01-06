@@ -30,7 +30,7 @@ def click_button():
 
 @when('the user clicks results')
 def click_results():
-    results_button.click()
+    driver.find_element_by_css_selector(results_button).click()
 
 
 @when('the user clicks about')
@@ -78,16 +78,14 @@ def home_page_opens():
     driver.find_element_by_css_selector(home_page_title).is_displayed()
 
 
-
-
 @then('results page opens')
 def home_page_opens():
-    results_page_title.is_displayed()
+    driver.find_element_by_css_selector(results_page_title).is_displayed()
 
 
 @then('close browser')
 def close_browser():
-    browser.close()
+    driver.close()
 
 
 @then('FAQ page opens')

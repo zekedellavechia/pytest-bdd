@@ -18,7 +18,7 @@ Feature: Homepage related cases
     When the user clicks about
     Then about page opens
 
-  @results @dashboard
+  @test
   Scenario: Navigate to results page
     When the user clicks results
     Then results page opens
@@ -40,8 +40,3 @@ Feature: Homepage related cases
     Then contact us page opens
     # todo maybe i should add close browser for all cases (?
     Then close browser
-
-    Scenario: Hola soy uin test
-
-      When nada
-      Then algo
