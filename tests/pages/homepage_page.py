@@ -1,7 +1,3 @@
-from selenium import webdriver
-from tests.conftest import *
-
-
 # Home Page
 home_button = 'a[href="https://registry.qa.covid.gcp.rexdb.us"]'
 home_page_title = "h1[class='hero-title xl']"
@@ -24,4 +20,3 @@ our_partners_title = 'h2[class="page-title"]'
 
 contact_us_button = 'a[href="https://registry.qa.covid.gcp.rexdb.us/contacts"]'
 contact_us_title = 'h2[class="title"]'
-

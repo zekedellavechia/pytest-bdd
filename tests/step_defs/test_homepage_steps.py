@@ -1,19 +1,8 @@
-from pytest_bdd import scenarios, when, then, given
+from pytest_bdd import when, then, given
 from tests.pages.homepage_page import *
-from tests.conftest import *
-from selenium import webdriver
-from time import sleep
+from tests.step_defs.conftest import *
 
-
-# Path for Scenarios
-
-scenarios('../features/homepage.feature')
-
-
-# Fixtures
-
-
-# Steps
+scenarios('../features/homepage.feature', '../features/login.feature')
 
 
 # Given

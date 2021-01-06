@@ -16,4 +16,3 @@ pytest-bdd==4.0.2
 six==1.15.0
 toml==0.10.2
 selenium~=3.141.0
-selene~=1.0.2

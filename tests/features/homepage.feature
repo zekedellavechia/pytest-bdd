@@ -1,4 +1,4 @@
-@homepage @smoke
+@homepage
 Feature: Homepage related cases
   As an user
   I want to navigate the main page,
@@ -8,17 +8,15 @@ Feature: Homepage related cases
   Background:
     Given homepage is displayed
 
-  @test
   Scenario: Navigate to home page
     When the user clicks home
     Then homepage page opens
 
-  @test
   Scenario: Navigate to about page
     When the user clicks about
     Then about page opens
 
-  @test
+  @smoke
   Scenario: Navigate to results page
     When the user clicks results
     Then results page opens
@@ -38,6 +36,5 @@ Feature: Homepage related cases
   Scenario: Navigate to Contact us page
     When the user clicks contact us
     Then contact us page opens
-    # todo maybe i should add close browser for all cases (?
     Then close browser
-
+    # todo maybe i should add close browser for all cases (?
