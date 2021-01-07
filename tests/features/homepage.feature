@@ -36,5 +36,4 @@ Feature: Homepage related cases
   Scenario: Navigate to Contact us page
     When the user clicks contact us
     Then contact us page opens
-    Then close browser
     # todo maybe i should add close browser for all cases (?
