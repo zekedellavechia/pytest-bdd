@@ -42,8 +42,6 @@ By tag just put the marker, for example to run cases marked as smoke:
 pipenv run pytest -m smoke
 ```
 
-
-
 ## References
 ### [Python Download](https://www.python.org/downloads/)
 ### [Pytest docs](https://docs.pytest.org/en/stable/)
