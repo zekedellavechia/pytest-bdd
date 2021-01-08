@@ -19,7 +19,5 @@ for click in range(10):
     print(f'Same value: {p[-1].text == str(click)}')
 
 
-
-
 browser.quit()
 
