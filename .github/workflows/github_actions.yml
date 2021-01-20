@@ -3,11 +3,7 @@
 
 name: Github Actions
 
-on:
-  pull_request:
-  push:
-    branches: 
-      - master
+on: [push]
 
 jobs:
   deploy:
